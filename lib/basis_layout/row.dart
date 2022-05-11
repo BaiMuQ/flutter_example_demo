@@ -7,7 +7,7 @@ class RowExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Container'),
+          title: const Text('Row'),
         ),
         body: Container(
           height: 200,

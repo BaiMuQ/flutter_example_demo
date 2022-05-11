@@ -1,6 +1,7 @@
 library basis_layout;
 
 export 'align.dart';
+export 'center.dart';
 export 'column.dart';
 export 'container.dart';
 export 'flutter_logo.dart';

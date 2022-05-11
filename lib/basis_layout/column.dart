@@ -7,7 +7,7 @@ class ColumnExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Container'),
+          title: const Text('Column'),
         ),
         body: Container(
           width: 200,

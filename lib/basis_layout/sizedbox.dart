@@ -7,7 +7,7 @@ class SizedBoxExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Container'),
+        title: const Text('SizedBox'),
       ),
       body: Container(
           color: Colors.grey,

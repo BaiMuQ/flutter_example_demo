@@ -26,6 +26,7 @@ class BasisLayoutMain extends StatelessWidget {
       _buildListTitle(context, 'stack'),
       _buildListTitle(context, 'sizedBox'),
       _buildListTitle(context, 'align'),
+      _buildListTitle(context, 'center'),
     ];
     return ListView(
       children: children,
