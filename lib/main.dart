@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_example_start/animation/index.dart';
 import 'package:flutter_example_start/async/index.dart';
+import 'package:flutter_example_start/interaction/index.dart';
 import 'package:flutter_example_start/paging/index.dart';
 import 'package:flutter_example_start/routes/index.dart';
 import 'package:flutter_example_start/text_image/index.dart';
 import 'package:flutter_example_start/user_input/index.dart';
 
+import 'advanced_layout/index.dart';
 import 'basis_layout/index.dart';
 
 void main() {
@@ -26,7 +29,10 @@ class _MyAppState extends State<MyApp> {
     TextAndImageMain(),
     UserInputMain(),
     AsyncMain(),
-    PagingMain()
+    PagingMain(),
+    AdvancedLayoutMain(),
+    AnimationMain(),
+    InteractionMain()
   ];
 
   // This widget is the root of your application.

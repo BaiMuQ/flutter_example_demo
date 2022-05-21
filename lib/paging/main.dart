@@ -21,6 +21,12 @@ class PagingMain extends StatelessWidget {
       _buildListTitle(context, 'listWheelScrollView'),
       _buildListTitle(context, 'reorderableListView'),
       _buildListTitle(context, 'gridView'),
+      _buildListTitle(context, 'scrollbar'),
+      _buildListTitle(context, 'refreshIndicator'),
+      _buildListTitle(context, 'dismissible'),
+      _buildListTitle(context, 'scrollConfiguration'),
+      _buildListTitle(context, 'notificationListener'),
+      _buildListTitle(context, 'singleChildScrollView'),
     ];
     return ListView(
       children: children,
