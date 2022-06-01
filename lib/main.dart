@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_example_start/advanced_animation/index.dart';
 import 'package:flutter_example_start/animation/index.dart';
 import 'package:flutter_example_start/async/index.dart';
+import 'package:flutter_example_start/depth_layout/index.dart';
 import 'package:flutter_example_start/interaction/index.dart';
+import 'package:flutter_example_start/overlay_dialog/index.dart';
 import 'package:flutter_example_start/paging/index.dart';
 import 'package:flutter_example_start/routes/index.dart';
+import 'package:flutter_example_start/sliver/index.dart';
 import 'package:flutter_example_start/text_image/index.dart';
 import 'package:flutter_example_start/user_input/index.dart';
 
 import 'advanced_layout/index.dart';
 import 'basis_layout/index.dart';
+import 'render_effects/index.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +37,12 @@ class _MyAppState extends State<MyApp> {
     PagingMain(),
     AdvancedLayoutMain(),
     AnimationMain(),
-    InteractionMain()
+    InteractionMain(),
+    OverlayAndDialogMain(),
+    AdvancedAnimationMain(),
+    SliverMain(),
+    RenderEffectsMain(),
+    DepthLayoutMain()
   ];
 
   // This widget is the root of your application.
@@ -40,6 +50,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: routes,
+      theme: ThemeData(
+        primarySwatch: Colors.pink,
+      ),
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Flutter Demo'),

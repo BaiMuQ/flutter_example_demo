@@ -8,7 +8,7 @@ class DragTargetExample extends StatefulWidget {
 }
 
 class _DragTargetExampleState extends State<DragTargetExample> {
-  List<Color> _currentColors = [];
+  final List<Color> _currentColors = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,11 +70,11 @@ class _DragTargetExampleState extends State<DragTargetExample> {
   getMixedColor() {
     if (_currentColors.isEmpty) return Colors.grey;
     int r = 0, g = 0, b = 0;
-    _currentColors.forEach((c) {
+    for (var c in _currentColors) {
       r += c.red;
       g += c.green;
       b += c.blue;
-    });
+    }
     final count = _currentColors.length;
     return Color.fromARGB(255, r ~/ count, g ~/ count, b ~/ count);
   }

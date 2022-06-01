@@ -1,4 +1,4 @@
-library animation;
+library interaction;
 
 export 'absorbPointer.dart';
 export 'dragTarget.dart';
